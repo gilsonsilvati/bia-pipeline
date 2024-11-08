@@ -1,4 +1,5 @@
 FROM public.ecr.aws/docker/library/node:21-slim
+
 RUN npm install -g npm@latest --loglevel=error
 
 #Instalando o curl
@@ -16,7 +17,7 @@ RUN NODE_OPTIONS=--openssl-legacy-provider REACT_APP_API_URL=http://34.239.240.1
 
 RUN mv client/build build
 
-RUN rm  -rf client/*
+RUN rm -rf client/*
 
 RUN mv build client/
 
