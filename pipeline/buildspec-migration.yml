@@ -12,7 +12,7 @@ phases:
       - echo Build iniciado em `date`
       - echo Executando migrations.....
       - echo Create Database
-      - npx sequelize db:create
+      # - npx sequelize db:create
       - echo Migrate Database
       - npx sequelize db:migrate
       - echo Build finalizado em `date`
